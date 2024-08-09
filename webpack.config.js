@@ -1,7 +1,5 @@
 const path = require('path');
 
-//TODO: настроить mode для разработки и для прода отдельно
-
 module.exports = {
     entry: './src/index.ts',
     output: {
