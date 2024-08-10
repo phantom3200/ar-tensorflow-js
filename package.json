@@ -5,17 +5,20 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "NODE_ENV=development webpack serve --server-type https",
-    "build": "NODE_ENV=production npx webpack --mode production"
+    "build": "NODE_ENV=production npx webpack --mode production",
+    "predeploy": "rm -rf build && npm run build",
+    "deploy": "gh-pages -d build"
   },
+  "homepage": "https://github.com/phantom3200/ar-tensorflow-js",
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
     "@teachablemachine/image": "^0.8.5",
-    "@tensorflow/tfjs": "^4.20.0",
     "css-loader": "^7.1.2",
     "eslint": "^9.8.0",
+    "gh-pages": "^6.1.1",
     "http-server": "^14.1.1",
     "prettier": "^3.3.3",
     "style-loader": "^4.0.0",
