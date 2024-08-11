@@ -1,28 +1,42 @@
-name: NodeJS with Webpack
+name: Deploy to GitHub Pages
 
 on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+    push:
+        branches: [main]
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
+    build-and-deploy:
+        runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version: [18.x, 20.x, 22.x]
+        permissions:
+            pages: write
+            id-token: write
 
-    steps:
-    - uses: actions/checkout@v4
+        strategy:
+            matrix:
+                node-version: ['20']
 
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v4
-      with:
-        node-version: ${{ matrix.node-version }}
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v3
 
-    - name: Build
-      run: |
-        npm ci
-        NODE_ENV=production npx webpack
+            - name: Configure Git
+              run: |
+                  git config --global user.name 'github-actions'
+                  git config --global user.email 'github-actions@github.com'
+
+            - name: Build your application
+              run: npm ci && npm run build
+
+            - name: Commit changes
+              run: |
+                git add .
+                git commit -m "Build and deploy to GitHub Pages"
+
+            - name: Deploy to GitHub Pages
+              uses: JamesIves/github-pages-deploy-action@v4
+              with:
+                  BRANCH: gh-pages
+                  FOLDER: dist
+              env:
+                GITHUB_TOKEN: ${{secrets.SECRET_ACTIONS}}
