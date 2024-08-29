@@ -9,8 +9,11 @@ jobs:
         runs-on: ubuntu-latest
 
         permissions:
+            actions: write
             pages: write
+            contents: read
             id-token: write
+            packages: write
 
         strategy:
             matrix:
@@ -18,25 +21,16 @@ jobs:
 
         steps:
             - name: Checkout code
-              uses: actions/checkout@v3
-
-            - name: Configure Git
-              run: |
-                  git config --global user.name 'github-actions'
-                  git config --global user.email 'github-actions@github.com'
+              uses: actions/checkout@v2
 
             - name: Build your application
               run: npm ci && npm run build
-
-            - name: Commit changes
-              run: |
-                git add .
-                git commit -m "Build and deploy to GitHub Pages"
 
             - name: Deploy to GitHub Pages
               uses: JamesIves/github-pages-deploy-action@v4
               with:
                   BRANCH: gh-pages
                   FOLDER: dist
-              env:
-                GITHUB_TOKEN: ${{secrets.SECRET_ACTIONS}}
+                  TOKEN: ${{secrets.SECRET_ACTIONS}}
+                  git-config-name: ${{ github.event.pusher.name }}
+                  git-config-email: ${{ github.event.pusher.email }}
