@@ -1,0 +1,90 @@
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow: auto;
+}
+.content {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 20px auto;
+    max-width: 1000px;
+    flex-direction: column;
+    gap: 10px;
+    background: #000000cf;
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+}
+.content .title {
+    font-size: 30px;
+}
+.content .subtitle {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.content .main-image img {
+    width: 300px;
+}
+.content .description {
+    line-height: 22px;
+}
+.content .sport img {
+    height: 20px;
+    position: relative;
+    top: 3px;
+}
+.content .plus {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.content .discount-content {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+}
+.content .discount-content img {
+    height: 14px;
+}
+.content .alternatives {
+    display: flex;
+    flex-direction: column;
+}
+.content .alternative-content-item a {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+}
+.content .alternative-content-item-title {
+    font-size: 18px;
+}
+.content .alternative-content-item img {
+    width: 200px;
+}
+.content .advantages .advantages-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.content .raiting {
+    display: flex;
+    flex-direction: column;
+}
+.content .raiting span {
+    color: #5faf2d;
+}
+.content .close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content .close img {
+    cursor: pointer;
+}
