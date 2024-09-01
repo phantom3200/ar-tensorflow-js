@@ -2,7 +2,7 @@ import {load, Webcam} from '@teachablemachine/image';
 import './style.css';
 import { contentObj } from './conts';
 
-const URL = '../model/';
+const URL = process.env.NODE_ENV === 'development' ? '/model/' : `${process.env.PROD_BASE_URL}model/`
 
 type Prediction = {
     className: string;

@@ -3,7 +3,7 @@ export const contentObj: Record<string, string> = {
 <div class="content-wrapper">
         <div class="title">Snikers</div>
         <div class="main-image">
-            <img src="../img/snikers.png" alt="" />
+            <img src="img/snikers.png" alt="" />
         </div>
         <div class="description">
             <div class="subtitle">Состав:</div>
@@ -12,19 +12,19 @@ export const contentObj: Record<string, string> = {
         <div class="calories">
             <div class="subtitle">Каллории</div>
             <div><b>499</b> ккал на 100грамм, <b>414</b> ккал в батончике</div>
-            <div class="sport">414 ккал ≈ 30 минут бега <span><img src="../gifs/running_man.gif" alt="" /></span></div>
+            <div class="sport">414 ккал ≈ 30 минут бега <span><img src="gifs/running_man.gif" alt="" /></span></div>
         </div>
         <div class="advantages">
             <div class="subtitle">Преимущества</div>
-            <div class="plus"><img src="../icons/plus-svgrepo-com.svg" alt="">Большой заряд энергией</div>
-            <div class="plus"><img src="../icons/plus-svgrepo-com.svg" alt="">Много орехов</div>
+            <div class="plus"><img src="icons/plus-svgrepo-com.svg" alt="">Большой заряд энергией</div>
+            <div class="plus"><img src="icons/plus-svgrepo-com.svg" alt="">Много орехов</div>
         </div>
         <div class="discount">
             <div class="subtitle">
                 Скидки и акции
             </div>
             <div class="discount-content">
-                <img src="../icons/sale-svgrepo-com.svg" alt="">
+                <img src="icons/sale-svgrepo-com.svg" alt="">
                 <div>В данном магазине на товар действует акция: <b>2</b> по цене 1</div>
             </div>
         </div>
@@ -34,19 +34,19 @@ export const contentObj: Record<string, string> = {
                 <div class="alternative-content-item">
                     <a href="#">
                         <div class="alternative-content-item-title">Kinder Bueno</div>
-                        <img src="../img/bueno.png" alt="">
+                        <img src="img/bueno.png" alt="">
                     </a>
                 </div>
             </div>
         </div>
     </div>
-    <div class="close"><img src="../icons/close.svg" alt=""></div>
+    <div class="close"><img src="icons/close.svg" alt=""></div>
 </div>`,
     bueno: `<div class="content">
 <div class="content-wrapper">
         <div class="title">Kinder Bueno</div>
         <div class="main-image">
-            <img src="../img/bueno.png" alt="" />
+            <img src="img/bueno.png" alt="" />
         </div>
         <div class="description">
             <div class="subtitle">Состав:</div>
@@ -55,19 +55,19 @@ export const contentObj: Record<string, string> = {
         <div class="calories">
             <div class="subtitle">Каллории</div>
             <div><b>572</b> ккал на 100грамм, <b>122</b> ккал в порции</div>
-            <div class="sport">122 ккал ≈ 10 минут бега <span><img src="../gifs/running_man.gif" alt="" /></span></div>
+            <div class="sport">122 ккал ≈ 10 минут бега <span><img src="gifs/running_man.gif" alt="" /></span></div>
         </div>
         <div class="advantages">
             <div class="subtitle">Преимущества</div>
-            <div class="plus"><img src="../icons/plus-svgrepo-com.svg" alt="">Большой заряд энергией</div>
-            <div class="plus"><img src="../icons/plus-svgrepo-com.svg" alt="">Молочный продукт, который не нужно хранить в холодильнике</div>
+            <div class="plus"><img src="icons/plus-svgrepo-com.svg" alt="">Большой заряд энергией</div>
+            <div class="plus"><img src="icons/plus-svgrepo-com.svg" alt="">Молочный продукт, который не нужно хранить в холодильнике</div>
         </div>
         <div class="discount">
             <div class="subtitle">
                 Скидки и акции
             </div>
             <div class="discount-content">
-                <img src="../icons/sale-svgrepo-com.svg" alt="">
+                <img src="icons/sale-svgrepo-com.svg" alt="">
                 <div>В данном магазине на товар действует акция: <b>2</b> по цене 1</div>
             </div>
         </div>
@@ -77,19 +77,19 @@ export const contentObj: Record<string, string> = {
                 <div class="alternative-content-item">
                     <a href="#">
                         <div class="alternative-content-item-title">Snikers</div>
-                        <img src="../img/snikers.png" alt="">
+                        <img src="img/snikers.png" alt="">
                     </a>
                 </div>
             </div>
         </div>
         </div>
-        <div class="close"><img src="../icons/close.svg" alt=""></div>
+        <div class="close"><img src="icons/close.svg" alt=""></div>
     </div>`,
     cesar: `<div class="content">
 <div class="content-wrapper">
         <div class="title">Салат Цезарь Шеф Перекрёсток, 220г</div>
         <div class="main-image">
-            <img src="../img/cesar.png" alt="" />
+            <img src="img/cesar.png" alt="" />
         </div>
         <div class="description">
             <div class="subtitle">Состав:</div>
@@ -102,9 +102,9 @@ export const contentObj: Record<string, string> = {
         <div class="advantages">
             <div class="subtitle">Преимущества</div>
             <div class="advantages-list">
-            <div class="plus"><img src="../icons/plus-svgrepo-com.svg" alt="">Товар собственного производства ТД Перекрёсток</div>
-            <div class="plus"><img src="../icons/plus-svgrepo-com.svg" alt="">Много белка</div>
-            <div class="plus"><img src="../icons/plus-svgrepo-com.svg" alt="">Много клетчатки</div>
+            <div class="plus"><img src="icons/plus-svgrepo-com.svg" alt="">Товар собственного производства ТД Перекрёсток</div>
+            <div class="plus"><img src="icons/plus-svgrepo-com.svg" alt="">Много белка</div>
+            <div class="plus"><img src="icons/plus-svgrepo-com.svg" alt="">Много клетчатки</div>
         </div>
         </div>
         <div class="raiting">
@@ -116,11 +116,11 @@ export const contentObj: Record<string, string> = {
                 Скидки и акции
             </div>
             <div class="discount-content">
-                <img src="../icons/sale-svgrepo-com.svg" alt="">
+                <img src="icons/sale-svgrepo-com.svg" alt="">
                 <div>В данном магазине на товар действует акция: <b>-20%</b></div>
             </div>
         </div>
         </div>
-         <div class="close"><img src="../icons/close.svg" alt=""></div>
+         <div class="close"><img src="icons/close.svg" alt=""></div>
     </div>`,
 };
